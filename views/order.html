@@ -54,6 +54,13 @@
                             <input class="ipt" type="text" id="billing_key" name="billing_key" value=""/>
                         </div>
                     </div>
+                    <div class="tit__form_box fcl_txt fw_bd">CVC/CVV</div>
+                    <div class="tit__form_box fsz_08">securityCode</div>
+                    <div class="ctn__form_box">
+                        <div class="input">
+                            <input class="ipt" type="text" id="securityCode" name="securityCode" value="" maxlength="3"/>
+                        </div>
+                    </div>
                 </div>
                 <div class="form_box has_border w240">
                     <div class="tit__form_box fcl_txt fw_bd">결제창 호출 방식</div>
@@ -265,8 +272,10 @@
             const $this_val = $(this).val();
             if ($this_val == 'Y') {
                 $('#inputBillingKey').css('display', 'block');
+                $('#Security_code').css('display', 'block');
             } else {
                 $('#inputBillingKey').css('display', 'none');
+                $('#Security_code').css('display', 'none');
             }
         });
     });

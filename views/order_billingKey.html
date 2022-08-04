@@ -103,6 +103,7 @@
         const service_oid = "{{ service_oid }}";                  // [선택] 주문번호
         const comments = "{{ comments }}";                        // [필수] 상품명
         const billing_key = "{{ billing_key }}"                   // [필수] 빌링키 (카드정보를 암호화 한 키 값)
+        const securityCode = "{{ securityCode }}"                 // [필수] 카드 CVC/CVV 번호
         const totalAmount = "{{ totalAmount }}";                  // [필수] 결제 요청금액
         const currency = "{{ currency }}";                        // [필수] 통화
         const firstName = "{{ firstName }}";                      // [선택] 카드소유주 이름 (보내지 않을 경우, 최초 결제시 입력한 카드소유주 이름으로 결제요청이 됩니다.)
@@ -145,6 +146,7 @@
                     service_oid,
                     comments,
                     billing_key,
+                    securityCode,
                     totalAmount,
                     currency,
                     firstName,

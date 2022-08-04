@@ -114,6 +114,7 @@ router.post('/payBillkey', async (req, res) => {
             service_oid: req.body.service_oid,                      // [선택] 주문번호
             comments: req.body.comments,                            // [필수] 상품명
             billing_key: req.body.billing_key,                      // [필수] 빌링키 (카드정보를 암호화 한 키 값)
+            securityCode: req.body.securityCode,                    // [필수] 카드 CVC/CVV 번호
             totalAmount: req.body.totalAmount,                      // [필수] 결제 요청금액
             currency: req.body.currency,                            // [필수] 통화
             firstName: req.body.firstName,                          // [선택] 카드소유주 이름 (보내지 않을 경우, 최초 결제시 입력한 카드소유주 이름으로 결제요청이 됩니다.)
