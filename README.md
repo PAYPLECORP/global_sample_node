@@ -12,7 +12,7 @@
 >📂 **/node/order &nbsp;:** &nbsp;상품 주문<br>
 >📂 **/node/order_confirm &nbsp;:** &nbsp;주문확정 및 결제<br>
 >📂 **/node/order_result &nbsp;:** &nbsp;결제결과<br>
->>📂 **/node/order_billingKey &nbsp;:** &nbsp;빌링키 결제<br>
+>📂 **/node/order_billingKey &nbsp;:** &nbsp;빌링키 결제<br>
 #### REST API
 >📂 **/node/payBillkey &nbsp;:** &nbsp;빌링키 결제<br>
 >📂 **/node/cancel &nbsp;:** &nbsp;결제취소<br>
