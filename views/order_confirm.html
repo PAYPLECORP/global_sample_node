@@ -38,10 +38,6 @@
                     <td>{{ lastName}} {{ firstName }}</td>
                 </tr>
                 <tr>
-                    <td>결제고객 휴대전화번호</td>
-                    <td>{{ phoneNumber }}</td>
-                </tr>
-                <tr>
                     <td>결제고객 이메일</td>
                     <td>{{ email }}</td>
                 </tr>
@@ -90,7 +86,6 @@
             obj.firstName = "{{ firstName }}";                    // [선택] 카드소유주 이름
             obj.lastName = "{{ lastName }}";                      // [선택] 카드소유주 성
             obj.email = "{{ email }}";                            // [선택] 이메일 주소
-            obj.phoneNumber = "{{ phoneNumber }}";                // [선택] 휴대전화 번호
             obj.resultUrl = "http://localhost:3000/node/result";  // [필수] 결제결과 반환(Return) URL
             obj.isDirect = "{{ isDirect }}";                      // [선택] 결제창 호출 다이렉트 여부 ("" | "Y")
 
